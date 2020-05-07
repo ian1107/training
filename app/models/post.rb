@@ -18,8 +18,8 @@ class Post < ApplicationRecord
   validate :validate
 
   def validate
-    # self.errors.add(:base, 'Only one draft post allowed per user') if self.status == 'draft' && user_status > 1
-    #
-    # self.errors.add(:base, 'Invalid words used in post') if bad_words(self.body)
+    self.errors.add(:base, 'Only one draft post allowed per user') if self.status == 'draft' && user_status > 1
+
+    self.errors.add(:base, 'Invalid words used in post') if bad_words(self.body)
   end
 end

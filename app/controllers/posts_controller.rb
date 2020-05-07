@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  # around_action :logging_request_response
+  around_action :logging_request_response
 
   def index
     @posts = Post.all

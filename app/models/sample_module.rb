@@ -11,11 +11,11 @@ module SampleModule
   #   has_one/belongs_to ... code
   # end
 
-  module ClassMethods # Compulsory to use ClassMethods
-    def count_vowels (vowels)
-      vowels.count('aeiou')
-    end
-  end
+  # module ClassMethods # Compulsory to use ClassMethods
+  #   def count_vowels (vowels)
+  #     vowels.count('aeiou')
+  #   end
+  # end
 
   # included do
   #   has_one/belongs_to ... code
