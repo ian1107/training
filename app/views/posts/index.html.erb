@@ -1,0 +1,31 @@
+<h1>Blog</h1>
+<% @posts.inspect %>
+
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <td colspan="2"></td>
+    <th>Content</th>
+    <th colspan="4"></th>
+    <th>UserId</th>
+    <th>Status</th>
+    <th>Word Count</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @posts.each do |post| %>
+    <%= render partial: "posts", locals: {post: post} %>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "New", "new" %>
+<%#= link_to "Activate", { :controller => 'posts', :action => 'update' } %>
+<%= link_to "Delete", "destroy"%>
+
+

@@ -1,0 +1,11 @@
+<tr>
+  <td><%= post.id %></td>
+  <td><%= post.title %></td>
+  <td colspan="2"></td>
+  <td><%= post.body %></td>
+  <td colspan="4"></td>
+  <td><%= post.user_id %></td>
+  <td><%= post.status %></td>
+  <td><% words = count_words(post.body) %></td>
+  <td><%= words %></td>
+</tr>

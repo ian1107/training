@@ -1,0 +1,21 @@
+<h1>Enter Post</h1>
+<div class="row">
+
+  <%= form_for (@post) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+
+    <%= f.submit%>
+
+    <% end %>
+
+</div>
